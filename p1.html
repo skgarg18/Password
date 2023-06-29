@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/2dc7768baf.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="p1.css">
+</head>
+<body>
+    <div>
+        <p class="head">PASSWORD GENERATOR</p>
+    </div>
+
+    <div>
+        <input readonly placeholder="Password" id="passdisplay" displaypass >
+        <i class="fa-solid fa-copy"></i>
+        <p class="copyMsg">copied</p>
+    </div>
+
+    <div id="container2">
+        <div id="sub-container">
+            <p class="sub-head">Password Length</p>
+            <p id="pass-length">0</p>
+        </div>
+
+        
+
+        <div>
+            <input type="range" min="1" max="18" step="1" class="slidebar" slidebar>
+        </div>
+
+        <div id="checkbox">
+
+            <div id="check">
+                <input type="checkbox" id="choice1" name="choice1" value="choice" >
+                <label for="choice1">Include Uppercase Letters</label><br>
+                <label for="choice1" style="margin-left:-3px ;"><i class="fa-solid fa-check"></i></label>
+                
+            </div>
+            
+            <div id="check">
+                <input type="checkbox" id="choice2" name="choice2" value="choice" >
+                <label for="choice2">Include Lowecase Letters</label><br>
+                <label for="choice2" style="margin-left:1px ;"><i class="fa-solid fa-check"></i></label>
+            </div>
+            
+            <div id="check">
+                <input type="checkbox" id="choice3" name="choice3" value="choice">
+                <label for="choice3">Include Numbers</label><br>
+                <label for="choice3" style="margin-left:62px ;"><i class="fa-solid fa-check"></i></label>
+            </div>
+            
+            <div id="check">
+                <input type="checkbox" id="choice4" name="choice4" value="choice">
+                <label for="choice4">Include Symbol</label><br>
+                <label for="choice4" style="margin-left:75px ;"><i class="fa-solid fa-check"></i></label>
+            </div>
+            
+            
+        </div>
+
+        <div id="strength">
+            <p>Strength</p>
+            <div id="colorstrength"></div>
+        </div>
+
+        <div>
+            <button onclick="generatePassword()">GENERATE PASSWORD</button>
+        </div>
+        
+    </div>
+
+
+    <script src="p1.js"></script>
+
+</body>
+</html>
