@@ -242,7 +242,7 @@ function generatePassword(){
     Passdisplaybx.value=password;
 
     changeIndicator();
-    copyPass();
+
 
     
     
