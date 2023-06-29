@@ -100,13 +100,13 @@ function changeIndicator(){
     if(count==0){
         setIndicator("grey");
     }
-    if(count==1 || slider.value<=5){
+    if(count==1){
         setIndicator("red");
     }
-    if(count==2 || count==3 ||slider.value<=10){
+    if(count==2 || count==3){
         setIndicator("yellow");
     }
-    if(count==4 ||slider.value>=10){
+    if(count==4){
         setIndicator("green");
     }
 
